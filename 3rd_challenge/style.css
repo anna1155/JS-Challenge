@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+:root {
+    --dark : #034C53;
+    --bg : #F38C79;
+    --light-bg : #FFC1B4;
+}
+html, body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background-color: var(--bg);
+}
+.container {
+    width: 380px;
+    background-color: white;
+    border-radius: 5px;
+    margin-block: 50px;
+}
+h3 {
+    text-align: center;
+    line-height: 50px;
+    background: var(--dark);
+    padding-left: 20px;
+    border-radius: 5px 5px 0 0;
+    color: #ffffff;
+}
+form {
+    padding: 30px 20px 25px 20px;
+}
+.container form .row {
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.container form .row input, input{
+    height: 100%;
+    width: 100%;
+    padding-left: 60px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.container form .row input:focus{
+    border: 2px solid var(--dark);
+}
+.container form .row i{
+    position:absolute;
+    width: 47px;
+    height: 100%;
+    background: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.container form .row button, button {
+    cursor: pointer;
+    background-color: var(--dark);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding-inline: 20px;
+    padding-block: 10px;
+    width: 100%;
+    margin-top: 5px;
+}
+.container form .link{
+    text-align: center;
+    cursor: pointer;
+}
+.container form .link a, a{
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+.container form .link a:hover{
+    text-decoration: underline;
+}
+
+.col {
+    margin: 10px;
+    border: 1px solid var(--dark);
+    border-radius: 10px;
+    background-color: var(--light-bg);
+}
+
+#logout {
+    cursor: pointer;
+    background-color: var(--dark);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding-inline: 20px;
+    padding-block: 10px;
+    width: 100px;
+    margin-block: 10px;
+    text-align: center;
+}
+#logout:hover {
+    border-radius: 2px;
+    transition: all 0.5s ease;
+}
+h4 {
+    text-decoration: underline;
+}
+#shorten-result {
+    margin-inline: 20px;
+    margin-bottom: 10px;
+}
+hr {
+    margin-top: 10px;
+    border: 1px solid var(--bg);
+}

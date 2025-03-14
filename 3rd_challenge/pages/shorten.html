@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorten</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../url.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="../js/private.js"></script>
+</head>
+<body>
+    <div class="container2">
+        <div class="col">
+            <h3>Create a shortcut for your URL</h3>
+            <form id="shorten-form" method="post">
+                <input type="url" name="url" placeholder="Enter your URL" required>
+                <button type="submit">Shorten</button>
+            </form>
+            <div id="shorten-result"></div>
+        </div>
+
+        <div class="col">
+            <h3>Your shortened URLs</h3>
+            <div id="shorten-list" style="padding: 20px;"></div>
+        </div>
+
+        <div class="col">
+            <h3>Get a URL by its ID : </h3>
+            <form id="get-form" method="get">
+                <input type="text" id="url-id" placeholder="Enter id of url you want to get">
+                <p id="result-url"></p>
+                <button type="submit">Get Url</button>
+            </form>
+        </div>
+
+        <div class="col">
+            <h3>Update a URL by its ID : </h3>
+            <form id="update-form" method="post">
+                <input type="text" id="input-url" placeholder="Enter id of url you want to update">
+                <p id="updated-url"></p>
+                <button type="submit">Update Url</button>
+            </form>
+        </div>
+
+        <div class="col">
+            <h3>Delete a URL by its ID : </h3>
+            <form id="delete-form" method="delete">
+                <input type="text" id="delete-url" placeholder="Enter id of url you want to delete">
+                <button type="submit">Delete Url</button>
+            </form>
+        </div>
+    </div>
+    <a href="/pages/logout.html" id="logout">Logout</a>
+    <script src="../js/createShortUrl.js"></script>
+    <script src="../js/getShortUrls.js"></script>
+    <script src="../js/get-url.js"></script>
+    <script src="../js/update-url.js"></script>
+    <script src="../js/delete-url.js"></script>
+</body>
+</html>
